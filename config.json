@@ -1,0 +1,11 @@
+{
+  "size": 2500,
+  "nested_size": 20,
+  "formats": [
+    ["lzma", "lzma_test"],
+    ["lzma-json", "lzma_json"],
+    ["zstd-3", "zstd"],
+    ["zstd-22", "zstd_heavy"],
+    ["zstd-1", "zstd_light"]
+  ]
+}
