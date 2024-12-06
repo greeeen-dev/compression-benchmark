@@ -4,7 +4,7 @@
   "formats": [
     ["lzma", "lzma_test"],
     ["lzma-json", "lzma_json"],
-    ["zstd-3", "zstd"],
+    ["zstd-3", "zstd_regular"],
     ["zstd-22", "zstd_heavy"],
     ["zstd-1", "zstd_light"]
   ]

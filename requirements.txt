@@ -1,1 +1,2 @@
 zstandard
+compress-json

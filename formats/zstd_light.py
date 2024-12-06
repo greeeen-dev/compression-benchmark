@@ -31,7 +31,7 @@ chunk_size = 4 * 1024 * 1024 # each chunk is 4MB
 level = 1 # min compression
 
 def compress(file: str) -> tuple[str, int, float]:
-    """Compresses a file using LZMA."""
+    """Compresses a file using Zstandard."""
 
     # open source file
     with open(file, 'rb') as f:
@@ -52,7 +52,7 @@ def compress(file: str) -> tuple[str, int, float]:
     return 'cache/compressed-1.zst', os.path.getsize('cache/compressed-1.zst'), time.time() - t_start
 
 def decompress(file: str) -> tuple[Union[bytes, dict], float]:
-    """Decompresses a file compressed using LZMA."""
+    """Decompresses a file compressed using Zstandard."""
 
     # instantiate decompressor
     decompressor = zstandard.ZstdDecompressor()
